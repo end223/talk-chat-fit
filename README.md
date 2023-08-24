@@ -68,10 +68,11 @@ Talk-Chat FIT requires:
 [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli) - The Heroku Command Line Interface (CLI) is an essential part of using Heroku. With it, you can create and manage Heroku apps directly from the terminal.
 
 **Pre-requisites** 🔧
+
 The Heroku CLI requires Git, the popular version control system. If you don’t have Git installed, complete:
 [Git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-Navegue até a pasta do projeto e instale as dependencias
+Navegue até a pasta do projeto e instale as dependencias:
 
 ```
 npm install
