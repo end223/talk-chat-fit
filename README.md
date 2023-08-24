@@ -11,6 +11,7 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 Este é um bot personalizado do Telegram que oferece assistência relacionada a condicionamento físico, nutrição. 
+
 Ele usa a API da OpenAI para responder as dúvidas dos usuários.
 
 ---
@@ -63,6 +64,7 @@ Quando uma opção é selecionada, o bot responde a perguntas relacionadas ao t�
 
 Talk-Chat FIT requires:
 [Node.js](https://nodejs.org/) v18+ to run.
+
 [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli) - The Heroku Command Line Interface (CLI) is an essential part of using Heroku. With it, you can create and manage Heroku apps directly from the terminal.
 
 **Pre-requisites** 🔧
