@@ -6,18 +6,23 @@
 Talk-Chat FIT 📱
 </h1>
 
-
 <p align="center"> 
- 
-[![N|Solid](https://i.ibb.co/LgtYbbv/PR-News-Emblem-Open-AI.jpg)](https://platform.openai.com) [![N|Solid](https://i.ibb.co/zFtpKSD/1.jpg)](https://t.me/botfather) [![N|Solid](https://i.ibb.co/wCp8Kgv/photo-2023-08-24-18-48-47.jpg)](https://signup.heroku.com)
-
+<img title="" src="https://i.ibb.co/TKqRdq7/nutritionist-8214649-removebg-preview.png" alt="" width="339">
 </p>
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
-Este é um bot personalizado do Telegram que oferece assistência relacionada a condicionamento físico, nutrição. 
-
+<p align="center">
+Este é um bot personalizado do Telegram que oferece assistência relacionada a condicionamento físico, nutrição.
+</p>
+<p align="center">
 Ele usa a API da OpenAI para responder as dúvidas dos usuários.
+</p>
+
+<div align="center">
+ 
+[![N|Solid](https://i.ibb.co/LgtYbbv/PR-News-Emblem-Open-AI.jpg)](https://platform.openai.com)
+[![N|Solid](https://i.ibb.co/zFtpKSD/1.jpg)](https://t.me/botfather)
+[![N|Solid](https://i.ibb.co/wCp8Kgv/photo-2023-08-24-18-48-47.jpg)](https://signup.heroku.com)
+</div>
 
 ---
 
@@ -165,4 +170,4 @@ Generating pre-built zip archives for distribution:
 ```sh
 gulp build dist --prod
 ```
-
+<p align="center"><a href=#top>Back to Top</a></p>
