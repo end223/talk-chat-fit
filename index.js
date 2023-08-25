@@ -4,7 +4,7 @@ import "dotenv/config";
 import express from 'express';
 
 // Configuração do servidor Express
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 const app = express();
 
 // Configuração da API da OpenAI
