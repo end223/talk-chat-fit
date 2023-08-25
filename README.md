@@ -11,10 +11,10 @@ Talk-Chat FIT 📱
 </p>
 
 <p align="center">
-Olá! 👋 Esse é um bot personalizado do Telegram que oferece assistência relacionada a condicionamento físico, nutrição.
+Olá! 👋 Este é um bot personalizado do Telegram que oferece assistência relacionada a condicionamento físico e nutrição.
 </p>
 <p align="center">
-Ele usa a API da OpenAI para responder as dúvidas dos usuários.
+Ele utiliza a API da OpenAI para responder às dúvidas dos usuários.
 </p>
 
 <div align="center">
@@ -26,23 +26,25 @@ Ele usa a API da OpenAI para responder as dúvidas dos usuários.
 
 ---
 
-## 🌐 〢 Content
+## 🌐  〢 Conteúdo
 
-- [✨ Features](#features)
-- [💻 Tech](#tech)
+- [✨ Recursos](#features)
+- [💻 Tecnologias](#tech)
 - [🌀 Fluxo de Conversa](#fluxo)
-- [⚙️Installation](#installation)
-- [📁 Setting up](#setup)
-- [⚠️ Note](#note)
+- [⚙️ Instalação](#installation)
+- [📁 Configuração: Keys](#setupkeys)
+- [📁 Configuração: Heroku](#setupheroku)
+- [🎉 Enjoy](#enjoy)
+- [💬 Contato](#contact)
 
 ---
 
-## ✨〢 Features
+## ✨〢 Recursos
 
 - Prompt personalizado.
-- Respostas a perguntas sobre nutrição e condicionamento físico.
+- Respostas para perguntas sobre nutrição e condicionamento físico.
 - Opções de menu para facilitar a interação.
-- Suporte para contato com a equipe.
+- Suporte para entrar em contato com a equipe.
 
 ---
 
@@ -72,20 +74,20 @@ O usuário pode escolher:
 
 ---
 
-## ⚙️  〢 Installation
+## ⚙️  〢 Instalação
 
-**Talk-Chat FIT** requires:
->[Node.js](https://nodejs.org/) v18+ to run.
+**Talk-Chat FIT** requer:
+>[Node.js](https://nodejs.org/) v18+ para funcionar.
 
->[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli) - The Heroku Command Line Interface (CLI) is an essential part of using Heroku. With it, you can create and manage Heroku apps directly from the terminal.
+>[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli) - A Interface de Linha de Comando (CLI) do Heroku é uma parte essencial para usar o Heroku. Com ela, você pode criar e gerenciar aplicativos Heroku diretamente pelo terminal.
 
-`**Pre-requisites**` 🔧
+`**Pré-requisitos**` 🔧
 
->The Heroku CLI requires Git, the popular version control system. If you don’t have Git installed, complete:
+>A CLI do Heroku requer o Git, um sistema popular de controle de versão. Se você não tiver o Git instalado, conclua:
 
->[Git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+>[Instalação do Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-Navegue até a pasta do projeto e instale as dependencias:
+Navegue até a pasta do projeto e instale as dependências:
 
 ```
 npm install
@@ -98,135 +100,106 @@ npm i express --save
 
 ---
 
-### 📁  〢 Setting Up: Keys
-- Create a `.env`  file  and paste the code:
+### 📁  〢 Configuração: Chaves
+- Crie um arquivo `.env` e cole o código:
 
 ```
 BOT_TOKEN="TELEGRAM_TOKEN"
 OPEN_AI_API="OPEN_AI_KEY"
 ```
 
-- Go to **[BotFather](https://t.me/BotFather)** on telegram, setup new bot with `/newbot` and add name to bot. 
-- Copy the **token to access the HTTP API** and paste on ``"TELEGRAM_TOKEN"`` in `.env` file.
-- Go to **[OpenAI](https://platform.openai.com)** sign or sign up and go to  **[View API keys](https://https://platform.openai.com/account/api-keys)**.
+- Vá para o **[BotFather](https://t.me/BotFather)** no Telegram, configure um novo bot com `/newbot` e adicione um nome para o bot. 
+- Copie o **token para acessar a API HTTP** e cole-o em `"TELEGRAM_TOKEN"` no arquivo `.env`.
+- Vá para o **[OpenAI](https://platform.openai.com)**, faça login ou cadastre-se e vá para **[Ver chaves da API](https://https://platform.openai.com/account/api-keys)**.
+
+>📝**Observação**: **``Você precisa recarregar $5 (valor mínimo) para usar a Chave da API da OpenAI``**.
 
  <img title="" src="https://i.ibb.co/N714Mkv/openai.png" alt="" width="639">
  
-- Setup new key and paste on ``"OPEN_AI_KEY"`` in `.env` file.
+- Configure a nova chave e cole em ``"OPEN_AI_KEY"`` no arquivo `.env`.
 
 ---
 
-### 📁  〢 Setting Up: Heroku
+### 📁  〢 Configuração: Heroku
 
-- After create your account on **[Heroku](https://signup.heroku.com/)**, open `Git BASH` in folder and login on your Heroku Account:
+>📝**Observação**: **``O Heroku possui um Plano Gratuito, mas você precisa configurar um método de pagamento para usar o Heroku``**.
+
+- Após criar sua conta no **[Heroku](https://signup.heroku.com/)**, abra o `Git BASH` na pasta e faça login na sua conta do Heroku:
 
 ```
 heroku login
 ```
 
-- Clone this repository, so you can deploy to Heroku, execute:
+- Clone este repositório para que você possa implantá-lo no Heroku. Execute:
  
 ```
 git clone URL
 ```
-- Create an app on Heroku, which prepares Heroku to receive your source code, run:
+- Crie um aplicativo no Heroku, que prepara o Heroku para receber o source code. Execute:
 
 ```
 heroku create
 ```
->_When you create an app, you also create a Git remote called heroku. It’s associated with your local Git repository._
+>_Quando você cria um aplicativo, também cria um remoto Git chamado "heroku". Ele está associado ao seu repositório Git local._
 
->⚠️**IMPORTANT:** `After create your app you need to create a Procfile`: 
+>⚠️**IMPORTANTE**: `Depois de criar o aplicativo, você precisa criar um Procfile`: 
+
 ```
 touch Procfile
 ```
 
-`and setup the code on file`:
+`e cole o código abaixo dentro do arquivo Procfile`:
 
 ```
 web: node index.js
 ```
 
-- **Now go to [Heroku Apps Settings](https://dashboard.heroku.com/apps)**.
-- Select your App.
-- Go to Settings and copy your `Heroku Webhook`.
+- **Agora vá para [Configurações do Heroku Apps](https://dashboard.heroku.com/apps)**.
+- Selecione seu aplicativo.
+- Vá para Configurações e copie seu `Webhook do Heroku`.
 
 <img title="" src="https://i.ibb.co/YWcg3f5/photo-2023-08-24-22-35-25.jpg" alt="" width="639">
 
->**Paste on the code line**: 
+>**Cole na linha de código**:
 
 <img title="" src="https://i.ibb.co/1KkX9rZ/heroku-webhook.png" alt="" width="639">
 
->**After configure Heroku Webhook, run**:
+>**Depois de configurar o Webhook do Heroku, execute os comandos**:
+
 
 ```
 git add .
 git commit -m Heroku Deploy App
 git push heroku main
 ```
+---
+
+>🎉**DONE**: **``Agora o Bot está rodando no servidor Heroku``**.
 
 
+Para visualizar os Logs sobre seu aplicativo em execução, execute:
 
-
-
-
-
-
-
-
-
-
-
-
-
+```
+heroku logs --tail
+```
+O Heroku trata os logs como fluxos de eventos ordenados por tempo agregados dos fluxos de saída de todos os seus aplicativos e componentes do Heroku, fornecendo um único canal para todos os eventos.
 
 ---
 
+# 
+<h1 align="center">
+🎉  〢 Enjoy
+</h1>
 
+<h1 align="center">
 
+---
 
+## 💬  〢 Contato
 
+<a href="https://t.me/cutegothvampire">
+  <img src="https://i.ibb.co/Z2bzy4R/logo-telegram-256.png" alt="Logo do Telegram" width="50">
+</a>
+</h1>
 
-
-
-## Development
-
-Want to contribute? Great!
-
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-
-```sh
-node app
-```
-
-Second Tab:
-
-```sh
-gulp watch
-```
-
-(optional) Third:
-
-```sh
-karma test
-```
-
-#### Building for source
-
-For production release:
-
-```sh
-gulp build --prod
-```
-
-Generating pre-built zip archives for distribution:
-
-```sh
-gulp build dist --prod
-```
 <p align="center"><a href=#top>Back to Top</a></p>
