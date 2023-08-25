@@ -11,7 +11,7 @@ Talk-Chat FIT 📱
 </p>
 
 <p align="center">
-Olá! 👋 Este é um bot personalizado do Telegram que oferece assistência relacionada a condicionamento físico e nutrição.
+Olá! 👋 Esse é um bot personalizado do Telegram que oferece assistência com prompts relacionados a condicionamento físico e nutrição.
 </p>
 <p align="center">
 Ele utiliza a API da OpenAI para responder às dúvidas dos usuários.
@@ -45,7 +45,7 @@ Ele utiliza a API da OpenAI para responder às dúvidas dos usuários.
 - Prompt personalizado.
 - Respostas para perguntas sobre nutrição e condicionamento físico.
 - Opções de menu para facilitar a interação.
-- Suporte para entrar em contato com a equipe.
+- Suporte para entrar em contato com a equipe. _(Certifique-se de configurar sua mensagem e seu usuário no menu Contato)_
 
 ---
 <a id="tech"></a>
