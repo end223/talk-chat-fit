@@ -23,7 +23,7 @@ app.post(`/webhook/${token}`, (req, res) => {
 });
 
 app.listen(port, () => {
-    bot.setWebHook(`https://rocky-ocean-66220-14980e7f378f.herokuapp.com/webhook/${token}`);
+    bot.setWebHook(`https://URL_DO_WEBHOOK.herokuapp.com/webhook/${token}`);
     console.log(`Bot está rodando e ouvindo na porta ${port}`);
 });
 
