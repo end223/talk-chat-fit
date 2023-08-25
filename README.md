@@ -38,6 +38,7 @@ Ele utiliza a API da OpenAI para responder às dúvidas dos usuários.
 - [💬 Contato](#contact)
 
 ---
+<a id="features"></a>
 
 ## ✨〢 Recursos
 
@@ -47,8 +48,9 @@ Ele utiliza a API da OpenAI para responder às dúvidas dos usuários.
 - Suporte para entrar em contato com a equipe.
 
 ---
+<a id="tech"></a>
 
-## 💻  〢 Tech
+## 💻  〢 Tecnologias
 
 **Talk-Chat FIT** usa os seguintes projetos para funcionar:
 
@@ -59,6 +61,7 @@ Ele utiliza a API da OpenAI para responder às dúvidas dos usuários.
 - [Telegram Bot API](https://www.npmjs.com/package/node-telegram-bot-api) - Telegram Bot API for NodeJS.
 
 ---
+<a id="fluxo"></a>
 
 ## 🌀  〢 Fluxo de Conversa
 
@@ -73,6 +76,7 @@ O usuário pode escolher:
 >Quando uma opção é selecionada, o bot responde a perguntas relacionadas ao tópico escolhido.
 
 ---
+<a id="installation"></a>
 
 ## ⚙️  〢 Instalação
 
@@ -99,6 +103,7 @@ npm i express --save
 ```
 
 ---
+<a id="setupkeys"></a>
 
 ### 📁  〢 Configuração: Chaves
 - Crie um arquivo `.env` e cole o código:
@@ -119,6 +124,7 @@ OPEN_AI_API="OPEN_AI_KEY"
 - Configure a nova chave e cole em ``"OPEN_AI_KEY"`` no arquivo `.env`.
 
 ---
+<a id="setupheroku"></a>
 
 ### 📁  〢 Configuração: Heroku
 
@@ -173,6 +179,7 @@ git commit -m Heroku Deploy App
 git push heroku main
 ```
 ---
+<a id="done"></a>
 
 >🎉**DONE**: **``Agora o Bot está rodando no servidor Heroku``**.
 
@@ -185,6 +192,7 @@ heroku logs --tail
 O Heroku trata os logs como fluxos de eventos ordenados por tempo agregados dos fluxos de saída de todos os seus aplicativos e componentes do Heroku, fornecendo um único canal para todos os eventos.
 
 ---
+<a id="enjoy"></a>
 
 # 
 <h1 align="center">
@@ -194,6 +202,7 @@ O Heroku trata os logs como fluxos de eventos ordenados por tempo agregados dos 
 <h1 align="center">
 
 ---
+<a id="contact"></a>
 
 ## 💬  〢 Contato
 
