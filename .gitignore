@@ -1,0 +1,4 @@
+.env
+node_modules
+openai-node
+package.json
