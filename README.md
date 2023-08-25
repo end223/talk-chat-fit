@@ -148,19 +148,24 @@ heroku create
 ```
 >_Quando você cria um aplicativo, também cria um remoto Git chamado "heroku". Ele está associado ao seu repositório Git local._
 
->⚠️**IMPORTANTE**: `Depois de criar o aplicativo, você precisa criar um Procfile`: 
+>⚠️**IMPORTANTE**: `Depois de criar o aplicativo, você configurar o arquivo Procfile`: 
 
-```
-touch Procfile
-```
-
-`e cole o código abaixo dentro do arquivo Procfile`:
+`Cole o código abaixo dentro do arquivo Procfile`:
 
 ```
 web: node index.js
 ```
 
-- **Agora vá para [Configurações do Heroku Apps](https://dashboard.heroku.com/apps)**.
+- **Configure as váriareis de ambiente do App**.
+```
+heroku config:set OPEN_AI_API=Sua_Api_Key
+```
+```
+heroku config:set BOT_TOKEN=TOKEN_DO_BOT_TELEGRAM
+```
+
+
+- **Depois de configurar vá para [Configurações do Heroku Apps](https://dashboard.heroku.com/apps)**.
 - Selecione seu aplicativo.
 - Vá para Configurações e copie seu `Webhook do Heroku`.
 
