@@ -204,16 +204,31 @@ O Heroku trata os logs como fluxos de eventos ordenados por tempo agregados dos 
 🎉  〢 Enjoy
 </h1>
 
-<h1 align="center">
-
 ---
-<a id="contact"></a>
 
-## 💬  〢 Contato
-
-<a href="https://t.me/cutegothvampire">
-  <img src="https://i.ibb.co/Z2bzy4R/logo-telegram-256.png" alt="Logo do Telegram" width="50">
+<h1 align="center">
+🤖  〢 Teste o Bot!
+</h1>
+<h1 align="center">
+<a href="https://t.me/talk_fit_bot">
+  <img src="https://i.ibb.co/Z2bzy4R/logo-telegram-256.png" alt="BOT" width="50">
 </a>
 </h1>
+
+---
+
+<a id="contact"></a>
+
+<h1 align="center">
+💬  〢 Contato
+</h1>
+
+<h1 align="center">
+<a href="https://t.me/cutegothvampire">
+  <img src="https://i.ibb.co/Z2bzy4R/logo-telegram-256.png" alt="Logo do Telegram" width="50"
+</a>
+</h1>
+
+---
 
 <p align="center"><a href=#top>Back to Top</a></p>
