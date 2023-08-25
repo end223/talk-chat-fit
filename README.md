@@ -199,13 +199,6 @@ O Heroku trata os logs como fluxos de eventos ordenados por tempo agregados dos 
 ---
 <a id="enjoy"></a>
 
-# 
-<h1 align="center">
-🎉  〢 Enjoy
-</h1>
-
----
-
 <h1 align="center">
 🤖  〢 Teste o Bot!
 </h1>
