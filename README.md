@@ -34,7 +34,7 @@ Ele utiliza a API da OpenAI para responder às dúvidas dos usuários.
 - [⚙️ Instalação](#installation)
 - [📁 Configuração: Keys](#setupkeys)
 - [📁 Configuração: Heroku](#setupheroku)
-- [🎉 Enjoy](#enjoy)
+- [🎉 Enjoy - Teste o BOT!](#enjoy)
 - [💬 Contato](#contact)
 
 ---
