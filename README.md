@@ -11,7 +11,7 @@ Talk-Chat FIT 📱
 </p>
 
 <p align="center">
-Este é um bot personalizado do Telegram que oferece assistência relacionada a condicionamento físico, nutrição.
+Olá! 👋 Esse é um bot personalizado do Telegram que oferece assistência relacionada a condicionamento físico, nutrição.
 </p>
 <p align="center">
 Ele usa a API da OpenAI para responder as dúvidas dos usuários.
@@ -48,7 +48,7 @@ Ele usa a API da OpenAI para responder as dúvidas dos usuários.
 
 ## 💻  〢 Tech
 
-Talk-Chat FIT usa os seguintes projetos para funcionar:
+**Talk-Chat FIT** usa os seguintes projetos para funcionar:
 
 - [NodeJS](https://nodejs.org/) - Evented I/O for the Backend
 - [Express](https://expressjs.com/) - Fast Node.JS network app framework
@@ -60,28 +60,30 @@ Talk-Chat FIT usa os seguintes projetos para funcionar:
 
 ## 🌀  〢 Fluxo de Conversa
 
-O bot inicia respondendo ao comando /start, oferecendo opções de menu. 
+>O bot inicia respondendo ao comando /start, oferecendo opções de menu. 
 
 O usuário pode escolher:
+
 🥗 Nutrição;
+
 🏋️ Condicionamento Físico.
 
-Quando uma opção é selecionada, o bot responde a perguntas relacionadas ao tópico escolhido.
+>Quando uma opção é selecionada, o bot responde a perguntas relacionadas ao tópico escolhido.
 
 ---
 
 ## ⚙️  〢 Installation
 
-Talk-Chat FIT requires:
-[Node.js](https://nodejs.org/) v18+ to run.
+**Talk-Chat FIT** requires:
+>[Node.js](https://nodejs.org/) v18+ to run.
 
-[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli) - The Heroku Command Line Interface (CLI) is an essential part of using Heroku. With it, you can create and manage Heroku apps directly from the terminal.
+>[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli) - The Heroku Command Line Interface (CLI) is an essential part of using Heroku. With it, you can create and manage Heroku apps directly from the terminal.
 
-**Pre-requisites** 🔧
+`**Pre-requisites**` 🔧
 
-The Heroku CLI requires Git, the popular version control system. If you don’t have Git installed, complete:
+>The Heroku CLI requires Git, the popular version control system. If you don’t have Git installed, complete:
 
-[Git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+>[Git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 Navegue até a pasta do projeto e instale as dependencias:
 
@@ -96,7 +98,7 @@ npm i express --save
 
 ---
 
-### 📁  〢 Setting Up
+### 📁  〢 Setting Up: Keys
 - Create a `.env`  file  and paste the code:
 
 ```
@@ -111,6 +113,63 @@ OPEN_AI_API="OPEN_AI_KEY"
  <img title="" src="https://i.ibb.co/N714Mkv/openai.png" alt="" width="639">
  
 - Setup new key and paste on ``"OPEN_AI_KEY"`` in `.env` file.
+
+---
+
+### 📁  〢 Setting Up: Heroku
+
+- After create your account on **[Heroku](https://signup.heroku.com/)**, open `Git BASH` in folder and login on your Heroku Account:
+
+```
+heroku login
+```
+
+- Clone this repository, so you can deploy to Heroku, execute:
+ 
+```
+git clone URL
+```
+- Create an app on Heroku, which prepares Heroku to receive your source code, run:
+
+```
+heroku create
+```
+>_When you create an app, you also create a Git remote called heroku. It’s associated with your local Git repository._
+
+>⚠️**IMPORTANT:** `After create your app you need to create a Procfile`: 
+```
+touch Procfile
+```
+
+`and setup the code on file`:
+
+```
+web: node index.js
+```
+
+- **Now go to [Heroku Apps Settings](https://dashboard.heroku.com/apps)**.
+- Select your App.
+- Go to Settings and copy your `Heroku Webhook`.
+
+<img title="" src="https://i.ibb.co/YWcg3f5/photo-2023-08-24-22-35-25.jpg" alt="" width="639">
+
+>**Paste on the code line**: 
+
+<img title="" src="https://i.ibb.co/1KkX9rZ/heroku-webhook.png" alt="" width="639">
+
+>**After configure Heroku Webhook, run**:
+
+```
+git add .
+git commit -m Heroku Deploy App
+git push heroku main
+```
+
+
+
+
+
+
 
 
 
