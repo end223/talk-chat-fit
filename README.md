@@ -1,12 +1,17 @@
+<a id="top"></a>
 
-# Talk-Chat FIT
-## _with_
+#
 
-[![N|Solid](https://i.ibb.co/LgtYbbv/PR-News-Emblem-Open-AI.jpg)](https://platform.openai.com) 
+<h1 align="center">
+Talk-Chat FIT 📱
+</h1>
 
-[![N|Solid](https://i.ibb.co/zFtpKSD/1.jpg)](https://t.me/botfather)
 
-[![N|Solid](https://i.ibb.co/PCMgwDs/photo-2023-08-24-18-48-47.jpg)](https://signup.heroku.com)
+<p align="center"> 
+ 
+[![N|Solid](https://i.ibb.co/LgtYbbv/PR-News-Emblem-Open-AI.jpg)](https://platform.openai.com) [![N|Solid](https://i.ibb.co/zFtpKSD/1.jpg)](https://t.me/botfather) [![N|Solid](https://i.ibb.co/wCp8Kgv/photo-2023-08-24-18-48-47.jpg)](https://signup.heroku.com)
+
+</p>
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
@@ -70,6 +75,7 @@ Talk-Chat FIT requires:
 **Pre-requisites** 🔧
 
 The Heroku CLI requires Git, the popular version control system. If you don’t have Git installed, complete:
+
 [Git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 Navegue até a pasta do projeto e instale as dependencias:
