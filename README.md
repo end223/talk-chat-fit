@@ -45,6 +45,7 @@ Ele utiliza a API da OpenAI para responder às dúvidas dos usuários.
 - Prompt personalizado.
 - Respostas para perguntas sobre nutrição e condicionamento físico.
 - Opções de menu para facilitar a interação.
+- Feedback de interação enquanto processa a resposta.
 - Suporte para entrar em contato com a equipe. _(Certifique-se de configurar sua mensagem e seu usuário no menu Contato)_
 
 ---
