@@ -29,6 +29,24 @@ app.listen(port, () => {
 
 const userStates = {};
 
+// Função para enviar mensagem
+const userFeedbackMessages = {}; // Objeto para armazenar as mensagens de feedback por chat ID
+
+// Função para enviar mensagem
+async function sendMessage(chatId, text, options) {
+    const message = await bot.sendMessage(chatId, text, options);
+    return message.message_id;
+}
+
+// Função para atualizar mensagem
+async function editMessage(chatId, messageId, text, options) {
+    await bot.editMessageText(text, {
+        chat_id: chatId,
+        message_id: messageId,
+        ...options,
+    });
+}
+
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
 
@@ -45,7 +63,7 @@ bot.onText(/\/start/, (msg) => {
             },
         };
 
-        bot.sendMessage(chatId, text, keyboard);
+        sendMessage(chatId, text, keyboard);
     }
 });
 
@@ -56,13 +74,12 @@ bot.on("callback_query", async (query) => {
     if (data === "menu") {
         userStates[chatId] = undefined;
 
-        bot.editMessageText("Voltando ao menu principal...", {
-            chat_id: chatId,
-            message_id: query.message.message_id,
+        editMessage(chatId, query.message.message_id, "Voltando ao menu principal...", {
             reply_markup: { inline_keyboard: [] },
         });
 
-        bot.sendMessage(chatId, "Bem-vindo de volta ao menu! Selecione a opção que deseja:", {
+        const menuText = "Bem-vindo de volta ao menu! Selecione a opção que deseja:";
+        const keyboard = {
             reply_markup: {
                 inline_keyboard: [
                     [{ text: "🥗 Nutrição", callback_data: "🥗 Nutrição" }],
@@ -70,27 +87,24 @@ bot.on("callback_query", async (query) => {
                     [{ text: "💬 Contato", callback_data: "💬 Contato" }],
                 ],
             },
-        });
+        };
+
+        sendMessage(chatId, menuText, keyboard);
     } else if (data === "💬 Contato") {
-        bot.editMessageText("" + data, {
-            chat_id: chatId,
-            message_id: query.message.message_id,
+        editMessage(chatId, query.message.message_id, "" + data, {
             reply_markup: { inline_keyboard: [] },
         });
 
-        // Envia a mensagem de contato
-        bot.sendMessage(chatId, "Para suporte ou contato por favor entre em contato com @seu_usuario");
+        sendMessage(chatId, "Para suporte ou contato por favor entre em contato com @cutegothvampire");
     } else {
         userStates[chatId] = data;
 
-        bot.editMessageText("" + data, {
-            chat_id: chatId,
-            message_id: query.message.message_id,
+        editMessage(chatId, query.message.message_id, "" + data, {
             reply_markup: { inline_keyboard: [] },
         });
 
         const instruction = data === "🥗 Nutrição" ? "Faça uma pergunta sobre Nutrição:" : "Faça uma pergunta sobre Condicionamento Físico:";
-        bot.sendMessage(chatId, instruction);
+        sendMessage(chatId, instruction);
     }
 });
 
@@ -99,10 +113,13 @@ bot.on("message", async (msg) => {
     const text = msg.text;
     const userState = userStates[chatId];
 
-    if (text === "/menu") {
+    if (text === "/start") {
+        userStates[chatId] = undefined;
+    } else if (text === "/menu") {
         userStates[chatId] = undefined;
 
-        bot.sendMessage(chatId, "Bem-vindo de volta ao menu! Selecione a opção que deseja:", {
+        const menuText = "Bem-vindo de volta ao menu! Selecione a opção que deseja:";
+        const keyboard = {
             reply_markup: {
                 inline_keyboard: [
                     [{ text: "🥗 Nutrição", callback_data: "🥗 Nutrição" }],
@@ -110,10 +127,25 @@ bot.on("message", async (msg) => {
                     [{ text: "💬 Contato", callback_data: "💬 Contato" }],
                 ],
             },
-        });
+        };
+
+        const messageId = await sendMessage(chatId, menuText, keyboard);
+
+        if (userFeedbackMessages[chatId]) {
+            delete userFeedbackMessages[chatId];
+            bot.deleteMessage(chatId, userFeedbackMessages[chatId]);
+        }
+
+        userFeedbackMessages[chatId] = messageId;
+    } else if (text === "/contato") {
+        sendMessage(chatId, "Para suporte ou contato, por favor entre em contato com @cutegothvampire");
     } else if (userState === "🥗 Nutrição" || userState === "🏋️ Condicionamento Físico" || userState === "💬 Contato") {
+        const feedbackMessageId = await sendMessage(chatId, "Digitando...");
+
         const aiResponse = await generateAIResponse(text, userState);
-        bot.sendMessage(chatId, aiResponse);
+
+        // Atualiza a mensagem de feedback com a resposta gerada
+        await editMessage(chatId, feedbackMessageId, aiResponse);
     }
 });
 
