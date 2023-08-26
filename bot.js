@@ -5,6 +5,7 @@ import openai from './openAI.js';
 const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 
 const userStates = {};
+const userFeedbackMessages = {};
 
 export default bot;
 
