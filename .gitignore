@@ -2,3 +2,4 @@
 node_modules
 openai-node
 package.json
+package-lock.json
