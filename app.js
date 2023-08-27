@@ -17,5 +17,5 @@ app.use(routes);
 
 app.listen(port, () => {
     console.log(`Bot está rodando e ouvindo na porta ${port}`);
-    bot.setWebHook(`https://rocky-ocean-66220-14980e7f378f.herokuapp.com/webhook/${token}`);
+    bot.setWebHook(`https://WEBHOOK_HEROKU.com/webhook/${token}`);
 });
