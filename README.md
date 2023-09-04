@@ -7,7 +7,7 @@ Talk-Chat FIT 📱
 </h1>
 
 <p align="center"> 
-<img title="" src="https://i.ibb.co/TKqRdq7/nutritionist-8214649-removebg-preview.png" alt="" width="339">
+<img title="" src="https://i.ibb.co/QKhd6kH/964035-apartamento-cartoon-estilo-home-office-vetor.jpg#vitrinedev" alt="" width="650">
 </p>
 
 <p align="center">
@@ -23,6 +23,19 @@ Ele utiliza a API da OpenAI para responder às dúvidas dos usuários.
 [![N|Solid](https://i.ibb.co/zFtpKSD/1.jpg)](https://t.me/botfather)
 [![N|Solid](https://i.ibb.co/wCp8Kgv/photo-2023-08-24-18-48-47.jpg)](https://signup.heroku.com)
 </div>
+
+##  💬 〢 Conteúdo
+
+| 🌀 Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Talk-Chat FIT**
+| :label: Tecnologias | JavaScript (NodeJS, Express, dotenv, OpenAI, Telegram Bot API)
+| :rocket: URL         | https://heroku.com
+| :fire: Desafio     | 
+
+
+
+
 
 ---
 
