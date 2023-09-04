@@ -29,7 +29,7 @@ Ele utiliza a API da OpenAI para responder às dúvidas dos usuários.
 | 🌀 Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **Talk-Chat FIT**
-| :label: Tecnologias | JavaScript NodeJS, Express, dotenv, OpenAI, Telegram Bot API
+| :label: Tecnologias | NodeJS, Express, dotenv, OpenAI, Telegram Bot API
 | :rocket: URL         | https://heroku.com
 | :fire: Desafio     | 
 
